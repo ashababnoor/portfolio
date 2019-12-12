@@ -1,0 +1,179 @@
+/* Here I have styled the index.html file :) */
+/* You can access the main file here : ashababnoor.github.io/portfolio/index */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.main-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/mountain-1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+div.nav-bar{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.nav-item {
+    float: right;
+}
+li.shabab-nav {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+li a:hover{
+    background-color: #111111;
+    font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+    li.shabab-nav, li.nav-item, img.face-image, div#about, div#contact, div.hobby, div.social-main, div.edu, div.vol, div.main {float: none; width:auto;}
+}
+div.main-content{
+    margin-left: 7vw;
+    margin-right: 7vw;
+    bottom: 25%;
+    position: absolute;
+}
+div.face-image{
+    width: 30%;
+    float: right;
+}
+img.face-image{
+    border-radius: 50%;
+    width: 100%;
+}
+div#about {
+    float: left;
+    width: 70%;
+    color: white;
+}
+p.title {
+    font-size: 5vw;
+    font-weight: bold;
+}
+p.subtitle {
+    font-size: 1.5vw;
+    font-weight: normal;
+    line-height: 1.6;
+}
+div.contact {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    padding: 3vw;
+    height: 55vh;
+    display: flex;
+}
+div.con-left {
+    float: left;
+    font-size: 3vw;
+    font-weight: bold;
+    width: 50%;
+}
+div.con-right {
+    float: right;
+    font-size: 1.5vw;
+    width: 50%;
+}
+span.con {
+    font-size: 2vw;
+    font-weight: bold;
+}
+iframe{
+    clear: both;
+    width: 100%;
+    height: 40vh;
+}
+div.edu{
+    padding: 6vw;
+    color: white;
+    background-color: #111111;
+    clear: both;
+    height: 75vh;
+}
+table.edu{
+    text-align: center;
+    border: none;
+}
+th, td{
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+div.social-main{
+    padding: 6vw;
+    color: black;
+    background-color: #ffffff;
+    clear: both;
+    height: 85vh;
+}
+img{
+    width: 10vw;
+}
+a{
+    display: inline-block;
+    padding: 1.5vw;
+}
+div.hobby{
+    padding: 6vw;
+    color: white;
+    background-color: #111111;
+    height: 80vh;
+    text-align: center;
+    word-spacing: 2vw;
+}
+div.hobby-items{
+    display: inline-block;
+    border: 2px solid black;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 25vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vw;
+}
+div.vol{
+    padding: 6vw;
+    color: black;
+    background-color: #ffffff;
+    clear: both;
+    height: 100vh;
+    font-size: 1.5vw;
+    line-height: 1.6;
+}
+div.memory{
+    padding: 6vw;
+    color: white;
+    background-color: #111111;
+    height: 120vh;
+}
+div.mem-box{
+    border: 2px solid white;
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+a.back{
+    display: block; 
+    background-color: #111111; 
+    color: white; 
+    text-decoration: none"
+}
+a.back:hover{
+    background-color: #4f4f4f;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 
+            Ahmed Shabab Noor | Portfolio
+        </title>
+        <link rel="icon" type="image/jpg" href="images/letter-s.jpg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <!--
+            This file contains the html tags and also the CSS code inside an embedded <style> tag. The external CSS file can be accessed by visiting
+
+                1. ashababnoor.github.io/portfolio/style.css
+        -->
+
+        
+        <!-- Here is the embedded CSS -->
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            div.main-image {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/mountain-1.jpg");
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            div.nav-bar{
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+            ul.nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            li.nav-item {
+                float: right;
+            }
+            li.shabab-nav {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 1.5vw;
+            }
+            li a:hover{
+                background-color: #111111;
+                font-weight: 400;
+            }
+            @media screen and (max-width: 720px) {
+                li.shabab-nav, li.nav-item, img.face-image, div#about, div#contact, div#hobby, div#social, div#education, div#volunteering, div#memory {float: none; height:auto;};
+                div.main-image {height: auto;};
+                div.nav-bar {margin-bottom: 2vw; padding-bottom: 2vw}
+                
+                
+            }
+            div.main-content{
+                margin-left: 7vw;
+                margin-right: 7vw;
+                bottom: 25%;
+                position: absolute;
+            }
+            div.face-image{
+                width: 30%;
+                float: right;
+            }
+            img.face-image{
+                border-radius: 50%;
+                width: 100%;
+            }
+            div#about {
+                float: left;
+                width: 70%;
+                color: white;
+            } 
+            p.title {
+                font-size: 5vw;
+                font-weight: bold;
+            }
+            p.subtitle {
+                font-size: 1.5vw;
+                font-weight: normal;
+                line-height: 1.6;
+            }
+            div.contact {
+                margin-left: 7vw;
+                margin-right: 7vw;
+                padding: 3vw;
+                height: 55vh;
+                display: flex;
+            }
+            div.con-left {
+                float: left;
+                font-size: 3vw;
+                font-weight: bold;
+                width: 50%;
+            }
+            div.con-right {
+                float: right;
+                font-size: 1.5vw;
+                width: 50%;
+            }
+            span.con {
+                font-size: 2vw;
+                font-weight: bold;
+            }
+            iframe{
+                clear: both;
+                width: 100%;
+                height: 40vh;
+            }
+            div.edu{
+                padding: 6vw;
+                color: white;
+                background-color: #111111;
+                clear: both;
+                height: 75vh;
+            }
+            table.edu{
+                text-align: center;
+                border: none;
+            }
+            th, td{
+                padding: 1vw;
+                font-size: 1.5vw;
+            }
+            div.social-main{
+                padding: 6vw;
+                color: black;
+                background-color: #ffffff;
+                clear: both;
+                height: 85vh;
+            }
+            img{
+                width: 10vw;
+            }
+            a{
+                display: inline-block;
+                padding: 1.5vw;
+            }
+            div.hobby{
+                padding: 6vw;
+                color: white;
+                background-color: #111111;
+                height: 80vh;
+                text-align: center;
+                word-spacing: 2vw;
+            }   
+            div.hobby-items{
+                display: inline-block;
+                border: 2px solid black;
+                padding: 10px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                width: 25vw;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2vw;
+            }
+            div.vol{
+                padding: 6vw;
+                color: black;
+                background-color: #ffffff;
+                clear: both;
+                height: 100vh;
+                font-size: 1.5vw;
+                line-height: 1.6;
+            }
+            div.memory{
+                padding: 6vw;
+                color: white;
+                background-color: #111111;
+                height: 120vh;
+            }
+            div.mem-box{
+                border: 2px solid white;
+                padding: 2vw;
+                font-size: 1.5vw;
+            }
+            a.back{
+                display: block; 
+                background-color: #111111; 
+                color: white; 
+                text-decoration: none"
+            }
+            a.back:hover{
+                background-color: #4f4f4f;
+            }
+        </style>
+        
+        
+        <div class="main-image" id="main-image">
+            <div class="nav-bar">
+                <ul class="nav">
+                    <li class="shabab-nav"> <a href="#main-image"> Shabab Noor </a></li>
+                    <li class="nav-item"> <a href="#memory"> Memory </a></li>
+                    <li class="nav-item"> <a href="#achievements"> Achievements </a></li>
+                    <li class="nav-item"> <a href="#volunteering"> Volunteering </a></li>
+                    <li class="nav-item"> <a href="#hobby"> Hobby </a></li>
+                    <li class="nav-item"> <a href="#social"> Social </a></li>
+                    <li class="nav-item"> <a href="#education"> Education </a></li>
+                    <li class="nav-item"> <a href="#contact"> Contact </a></li>
+                    <li class="nav-item"> <a href="#about"> About </a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <br>
+                <div class="face-image">
+                    <img class="face-image" src="images/shabab.jpg" alt="An image of my face">
+                </div>
+                <div id="about">
+                    <p class="title"> Hi, I'm Shabab. </p>
+                    <p class="subtitle"> I'm a web development and programming enthusiast.<br> I also do some graphics design work on the side.<br> I'm currently a student of <i> United International University.</i><br><b>(Student ID: 011 193 024)</b></p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact">
+            <div class="con-left">
+                <p>Contact</p>
+            </div>
+            <div class="vl"></div>
+            <div class="con-right">
+                <p class="con-right">
+                    <span class="con"> Phone No. </span><br><br>
+                    01788952191 <br><br>
+                    <span class="con">E-mail </span> <br><br>
+                    ashababnoor@gmail.com <br><br>
+                    <span class="con"> Address </span> <br><br>
+                    365/5, East Kazipara <br>
+                    Mirpur, Dhaka - 1216.
+                </p>
+            </div>
+        </div>
+        
+        <div style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d912.6341023696655!2d90.37440022642413!3d23.799517297797617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1575658040076!5m2!1sen!2sbd"   frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>    
+        
+        <div class="edu" id="education">
+        <p style="font-size: 3vw; font-weight: bold">Education</p>
+        <table class="edu" align="center">
+            <tr>
+                <th>Degree/Course</th>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>PSC</td>
+                <td>2011</td>
+                <td>Govt. Science College Attached High School</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>JSC</td>
+                <td>2014</td>
+                <td>Govt. Science College Attached High School</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>2017
+                </td>
+                <td>Govt. Science College Attached High School</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>2019</td>
+                <td>Notre Dame College</td>
+                <td>4.25</td>
+            </tr>
+            <tr>
+                <td>BSc CSE</td>
+                <td>2023 <br> <span style="font-size: 1vw">(expected)</span></td>
+                <td>United International University</td>
+                <td><i> N/A </i></td>
+            </tr>
+        </table>
+        </div>
+        <div id="social" class="social-main">
+            <p style="font-size: 3vw; font-weight: bold">Social Media & Others</p>
+            <div align="center">
+                <a href="https://www.facebook.com/ashababnoor" target="_blank"> <img src="images/facebook.png" title="Facebook"> </a>
+                <a href="https://www.github.com/ashababnoor" target="_blank"> <img src="images/github-logo.png" title="GitHub"> </a>
+                <a href="https://www.behance.net/ashababnoor" target="_blank"> <img src="images/behance.png" title="Behance"> </a>
+                <br><br><br>
+                <a href="https://www.twitter.com/ashababnoor" target="_blank"> <img src="images/twitter.png" title="Twitter"> </a>
+                <a href="https://www.instagram.com/ashababnoor" target="_blank"> <img src="images/instagram.png" title="Instagram"> </a>
+                <a href="https://www.linkedin.com/ashababnoor" target="_blank" title="LinkedIn"> <img src="images/linkedin.png"> </a>
+            </div>
+        </div>
+        <div id="hobby" class="hobby">
+            <p style="font-size: 3vw; font-weight: bold; text-align: left">Hobbies</p>
+            <br><br><br>
+            <div class="hobby-items" style="background-color: #34a853"> 
+                Cooking
+            </div>
+            <div class="hobby-items" style="background-color: #4285f4"> 
+                Coding
+            </div>
+            <div class="hobby-items" style="background-color: orange; word-spacing: normal"> 
+                Solving Puzzles
+            </div>
+            <br><br><br>
+            <div class="hobby-items" style="background-color: #fbbc05"> 
+                Photography
+            </div>
+            <div class="hobby-items" style="background-color: #ea4335"> 
+                Designing
+            </div>
+            <div class="hobby-items" style="background-color: violet"> 
+                Crafting
+            </div>
+        </div>
+        <div id="volunteering" class="vol"> 
+            <p style="font-size: 3vw; font-weight: bold">Volunteering</p>
+            <ul>
+                <li>Volunteered in art competition held for street kids and the less fortunate, organized by Shishu Bikash Kendra, in 2016.</li>
+                <li>Volunteered in Notre Dame 26<sup>th</sup> Annual Science Fair in 2018.</li>
+                <li>Volunteered in 1<sup>st</sup> National Space Camp and Astrology Olympiad held by Notre Dame Eco and Space Club in 2018. </li>
+                <li>Volunteered in LSS Study Tour, hosted by <abbr>IQAC</abbr>(International Quality Assurance Cell) in 2019.</li>
+            </ul>
+            
+            <p style="font-size: 3vw; font-weight: bold" id="achievements">Achievements</p>
+            <ul>
+                <li>Achieved Talentpool Scholarship in PECE(Primary Education Completion Examination) in 2011.</li>
+                <li>Achieved Talentpool Scholarship in JSC Examination in 2014.</li>
+                <li>Secured a place in the top 100 of <i>"Udvash Udvashito Mukh"</i> competition in 2014. </li>
+                <li>Achieved 1<sup>st</sup> place in 43<sup>rd</sup> ACPC Neutrino Science Fair, IQ Competition.</li>
+                <li>Achieved 3<sup>rd</sup> place in 43<sup>rd</sup> ACPC Neutrino Science Fair, Sudoku Competition.</li>
+                <li>Became the Secretary of Organization in Notre Dame Eco &amp; Space Club for the term 2018-2019.</li>
+            </ul>
+        </div>
+        <div id="memory" class="memory">
+            <p style="font-size: 3vw; font-weight: bold" id="achievements">A Memorable Day</p>
+            <div class="mem-box">
+                <p>
+                    Today the memory i'll be sharing with you guys is a very heavy-hearted one for me. 
+                    So, the year is 2011. November 29th. It was a tuesday. It was the day before the last exam of pece. Since most of you are from bangla medium schools, you know what i'm talking about. I still  vividly remember the day. We had our social science exam on that day. The next day was my religion exam. I had just came out of the hall. I was a bit upset because i was unsure about two questions that carried one mark each. It was a big deal back then. My father was slightly dissapointed hearing that. So we went home and i kept panicking and started crying. My father had already left for something important. Approximately an hour later 2 guys from our neighbourhood bring my father home saying he wasn't feeling well. My father was a patient of high blood pressure for years at that time. So when he was brought home 
+
+                    So, we all went home. I kept panicking and started crying. at that time my father received a call and had to leave to meet someone. Approximately an hour later my mother called my father to know about his where-abouts. He said he's not feeling well and that he would come back very shortly. Let me point out that my father was a patient of high blood pressure at that time. 
+                    Around 10 minutes later he comes home. He rang the door bell but when we opened the door he was about to collapse. We barely managed to get him inside. We sat him down on the sofa, he had lost control of his arm and legs. We quickly called a local doctor and when he arrived the doctor said his pressure is too high and he needs to be hospitalized immediately. So we rushed him to the hospital. He was admitted to the emergency ward and we had a ct scan done of him. We came to know that there was around 50% hemorrhage on his brain and the whole right side of his body was paralyzed. His speech was also impared. The doctors operated on my father's brain later that night. The operation was successful and he was on his way to recovery but he needed to be kept under observation so he was staying at the hospital for about a month. While still being there suddenly one very unfortunate day he had a drug reaction from the prescribed medicine which the hospital was giving him. Apparently the chances of this reaction 1 in 10 million. His condition deteriorated exponentially. The doctors said he wouldn't survive. He was kept in the icu unit for the next 2 months. But by the grace of Allah Subhan’a wa ta'ala he slowly recovered. He is alive now but unfortunately, he has been for the last 8 years and still is paralyzed. But we are lucky that he survived. That would be all. Thank you.
+                </p>
+            </div>
+            <br>
+            <div style="text-align: center; font-size: 2vw; font-weight: bold; text-decoration: none; margin-left: 30vw; margin-right:30vw; text-align: center"> 
+                <a class="back" href="#main-image" style="text-decoration: none; text-align: center"> Back to the top </a>
+            </div>
+        </div>
+    </body>
+</html>
