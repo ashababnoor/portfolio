@@ -42,8 +42,12 @@ li a:hover{
     background-color: #111111;
     font-weight: 400;
 }
-@media screen and (max-width: 600px) {
-    li.shabab-nav, li.nav-item, img.face-image, div#about, div#contact, div.hobby, div.social-main, div.edu, div.vol, div.main {float: none; width:auto;}
+@media screen and (max-width: 1440px) {
+                li.shabab-nav, li.nav-item, img.face-image, div#about, div#contact, div#hobby, div#social, div#education, div#volunteering, div#memory {height:auto;};
+                div.main-image {float: none; height: auto; bottom: none;};
+                div.nav-bar {margin-bottom: 2vw; padding-bottom: 2vw};
+                div.vol, div.mem-box, div.memory {font-size: 0.7vw};
+                th, td {font-size: 1.5vw};
 }
 div.main-content{
     margin-left: 7vw;
