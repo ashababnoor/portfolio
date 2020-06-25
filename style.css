@@ -165,7 +165,7 @@ div.memory{
     padding: 6vw;
     color: white;
     background-color: #111111;
-    height: 120vh;
+    min-height: 120vh;
 }
 div.mem-box{
     border: 2px solid white;
