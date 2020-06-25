@@ -15,308 +15,120 @@
     <body>
     
         <!--
-            This file contains the html tags and also the CSS code inside an embedded <style> tag. The external CSS file can be accessed by visiting
-
+                The external CSS file can be accessed by visiting
                 1. ashababnoor.github.io/portfolio/style.css
         -->
-
         
-        <!-- Here is the embedded CSS -->
-        <style>
-            body, html {
-                height: 100%;
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            div.main-image {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/mountain-1.jpg");
-                height: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-            }
-            div.nav-bar{
-                margin-left: 5vw;
-                margin-right: 5vw;
-                z-index: 999;
-            }
-            ul.nav {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-            li.nav-item {
-                float: right;
-            }
-            li.shabab-nav {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 1.5vw;
-            }
-            li a:hover{
-                background-color: #111111;
-                font-weight: 400;
-            }
-            @media screen and (max-width: 1440px) {
-                li.shabab-nav, li.nav-item, img.face-image, div#about, div#contact, div#hobby, div#social, div#education, div#volunteering, div#memory {height:auto;};
-                div.main-image {float: none; height: auto; bottom: none;};
-                div.nav-bar {margin-bottom: 2vw; padding-bottom: 2vw};
-                div.vol, div.mem-box, div.memory {font-size: 0.7vw};
-                th, td {font-size: 1.5vw};
-            }
-            div.main-content{
-                margin-left: 7vw;
-                margin-right: 7vw;
-                bottom: 20%;
-                position: absolute;
-            }
-            div.face-image{
-                width: 30%;
-                float: right;
-            }
-            img.face-image{
-                border-radius: 50%;
-                width: 100%;
-            }
-            div#about {
-                float: left;
-                width: 70%;
-                color: white;
-            } 
-            p.title {
-                font-size: 5vw;
-                font-weight: bold;
-            }
-            p.subtitle {
-                font-size: 1.5vw;
-                font-weight: normal;
-                line-height: 1.6;
-            }
-            div.contact {
-                margin-left: 7vw;
-                margin-right: 7vw;
-                padding: 3vw;
-                height: 55vh;
-                display: flex;
-            }
-            div.con-left {
-                float: left;
-                font-size: 3vw;
-                font-weight: bold;
-                width: 50%;
-            }
-            div.con-right {
-                float: right;
-                font-size: 1.5vw;
-                width: 50%;
-            }
-            span.con {
-                font-size: 2vw;
-                font-weight: bold;
-            }
-            iframe{
-                clear: both;
-                width: 100%;
-                height: 40vh;
-            }
-            div.edu{
-                padding: 6vw;
-                color: white;
-                background-color: #111111;
-                clear: both;
-                height: 75vh;
-            }
-            table.edu{
-                text-align: center;
-                border: none;
-            }
-            th, td{
-                padding: 1vw;
-                font-size: 1.5vw;
-            }
-            div.social-main{
-                padding: 6vw;
-                color: black;
-                background-color: #ffffff;
-                clear: both;
-                height: 85vh;
-            }
-            img{
-                width: 10vw;
-            }
-            a{
-                display: inline-block;
-                padding: 1.5vw;
-            }
-            div.hobby{
-                padding: 6vw;
-                color: white;
-                background-color: #111111;
-                height: 100vh;
-                text-align: center;
-                word-spacing: 2vw;
-            }   
-            div.hobby-items{
-                display: inline-block;
-                border: 2px solid black;
-                padding: 10px;
-                padding-bottom: 30px;
-                padding-top: 30px;
-                width: 25vw;
-                text-align: center;
-                font-weight: bold;
-                font-size: 2vw;
-            }
-            div.vol{
-                padding: 6vw;
-                color: black;
-                background-color: #ffffff;
-                clear: both;
-                height: 100vh;
-                font-size: 1.5vw;
-                line-height: 1.6;
-            }
-            div.memory{
-                padding: 6vw;
-                color: white;
-                background-color: #111111;
-                height: 120vh;
-            }
-            div.mem-box{
-                border: 2px solid white;
-                padding: 2vw;
-                font-size: 1.5vw;
-            }
-            a.back{
-                display: block; 
-                background-color: #111111; 
-                color: white; 
-                text-decoration: none"
-            }
-            a.back:hover{
-                background-color: #4f4f4f;
-            }
-        </style>
-        
-        
-        <div class="main-image" id="main-image">
-            <div class="nav-bar">
-                <ul class="nav">
-                    <li class="shabab-nav"> <a href="#main-image"> Shabab Noor </a></li>
-                    <li class="nav-item"> <a href="#memory"> Memory </a></li>
-                    <li class="nav-item"> <a href="#achievements"> Achievements </a></li>
-                    <li class="nav-item"> <a href="#volunteering"> Volunteering </a></li>
-                    <li class="nav-item"> <a href="#hobby"> Hobby </a></li>
-                    <li class="nav-item"> <a href="#social"> Social </a></li>
-                    <li class="nav-item"> <a href="#education"> Education </a></li>
-                    <li class="nav-item"> <a href="#contact"> Contact </a></li>
-                    <li class="nav-item"> <a href="#about"> About </a></li>
-                </ul>
-            </div>
-            <br><br><br>
-            <div class="main-content">
-                <br>
-                <div class="face-image">
-                    <img class="face-image" src="images/shabab.jpg" alt="An image of my face">
-                </div>
-                <div id="about">
-                    <p class="title"> Hi, I'm Shabab. </p>
-                    <p class="subtitle"> I'm a web development and programming enthusiast.<br> I also do some graphics design work on the side.<br> I'm currently a student of <i> United International University.</i></p>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="contact">
-            <div class="con-left">
-                <p>Contact</p>
-            </div>
-            <div class="vl"></div>
-            <div class="con-right">
-                <p class="con-right">
-                    <span class="con"> Phone No. </span><br><br>
-                    01986754231<br>
-                    <span style="font-size: 1vw;">(fake obviously)</span><br><br>
-                    <span class="con">E-mail </span> <br><br>
-                    ashababnoor@gmail.com <br><br>
-                    <span class="con"> Address </span> <br><br>
-                    123/5, Some Place <br>
-                    Some Where, Dhaka - 2000.
-                </p>
-            </div>
-        </div>
-        
-        <div style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233668.38703692693!2d90.27923991057244!3d23.780573258035957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1576623098961!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>    
-        
-        <div class="edu" id="education">
-        <p style="font-size: 3vw; font-weight: bold">Education</p>
-        <table class="edu" align="center">
-            <tr>
-                <th>Degree/Course</th>
-                <th>Year</th>
-                <th>Institution</th>
-                <th>Grade</th>
-            </tr>
-            <tr>
-                <td>PSC</td>
-                <td>2011</td>
-                <td>Govt. Science College Attached High School</td>
-                <td>5.00</td>
-            </tr>
-            <tr>
-                <td>JSC</td>
-                <td>2014</td>
-                <td>Govt. Science College Attached High School</td>
-                <td>5.00</td>
-            </tr>
-            <tr>
-                <td>SSC</td>
-                <td>2017
-                </td>
-                <td>Govt. Science College Attached High School</td>
-                <td>5.00</td>
-            </tr>
-            <tr>
-                <td>HSC</td>
-                <td>2019</td>
-                <td>Notre Dame College</td>
-                <td>4.25</td>
-            </tr>
-            <tr>
-                <td>BSc CSE</td>
-                <td>2023 <br> <span style="font-size: 1vw">(expected)</span></td>
-                <td>United International University</td>
-                <td><i> N/A </i></td>
-            </tr>
-        </table>
-        </div>
-        <div id="social" class="social-main">
-            <p style="font-size: 3vw; font-weight: bold">Social Media & Others</p>
-            <div align="center">
-                <a href="https://www.facebook.com/ashababnoor" target="_blank"> <img src="images/facebook.png" title="Facebook"> </a>
-                <a href="https://www.github.com/ashababnoor" target="_blank"> <img src="images/github-logo.png" title="GitHub"> </a>
-                <a href="https://www.behance.net/ashababnoor" target="_blank"> <img src="images/behance.png" title="Behance"> </a>
-                <br><br><br>
-                <a href="https://www.twitter.com/ashababnoor" target="_blank"> <img src="images/twitter.png" title="Twitter"> </a>
-                <a href="https://www.instagram.com/ashababnoor" target="_blank"> <img src="images/instagram.png" title="Instagram"> </a>
-                <a href="https://www.linkedin.com/ashababnoor" target="_blank" title="LinkedIn"> <img src="images/linkedin.png"> </a>
-            </div>
-        </div>
-        <div id="hobby" class="hobby">
-            <p style="font-size: 3vw; font-weight: bold; text-align: left">Hobbies</p>
-            <br><br><br>
-            <div class="hobby-items" style="background-color: #34a853"> 
-                Cooking
-            </div>
-            <div class="hobby-items" style="background-color: #4285f4"> 
+       <div class="main-image" id="main-image">
+           <div class="nav-bar">
+               <ul class="nav">
+                   <li class="shabab-nav"> <a href="#main-image"> Shabab Noor </a></li>
+                   <li class="nav-item"> <a href="#memory"> Memory </a></li>
+                   <li class="nav-item"> <a href="#achievements"> Achievements </a></li>
+                   <li class="nav-item"> <a href="#volunteering"> Volunteering </a></li>
+                   <li class="nav-item"> <a href="#hobby"> Hobby </a></li>
+                   <li class="nav-item"> <a href="#social"> Social </a></li>
+                   <li class="nav-item"> <a href="#education"> Education </a></li>
+                   <li class="nav-item"> <a href="#contact"> Contact </a></li>
+                   <li class="nav-item"> <a href="#about"> About </a></li>
+               </ul>
+           </div>
+           <br><br><br>
+           <div class="main-content">
+               <br>
+               <div class="face-image">
+                   <img class="face-image" src="images/shabab.jpg" alt="An image of my face">
+               </div>
+               <div id="about">
+                   <p class="title"> Hi, I'm Shabab. </p>
+                   <p class="subtitle"> I'm a web development and programming enthusiast.<br> I also do some graphics design work on the side.<br> I'm currently a student of <i> United International University.</i></p>
+               </div>
+           </div>
+       </div>
+       <div id="contact" class="contact">
+           <div class="con-left">
+               <p>Contact</p>
+           </div>
+           <div class="vl"></div>
+           <div class="con-right">
+               <p class="con-right">
+                   <span class="con"> Phone No. </span><br><br>
+                   01986754231<br>
+                   <span style="font-size: 1vw;">(fake obviously)</span><br><br>
+                   <span class="con">E-mail </span> <br><br>
+                   ashababnoor@gmail.com <br><br>
+                   <span class="con"> Address </span> <br><br>
+                   123/5, Some Place <br>
+                   Some Where, Dhaka - 2000.
+               </p>
+           </div>
+       </div>
+       
+       <div style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233668.38703692693!2d90.27923991057244!3d23.780573258035957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1576623098961!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+       </div>    
+       
+       <div class="edu" id="education">
+       <p style="font-size: 3vw; font-weight: bold">Education</p>
+       <table class="edu" align="center">
+           <tr>
+               <th>Degree/Course</th>
+               <th>Year</th>
+               <th>Institution</th>
+               <th>Grade</th>
+           </tr>
+           <tr>
+               <td>PSC</td>
+               <td>2011</td>
+               <td>Govt. Science College Attached High School</td>
+               <td>5.00</td>
+           </tr>
+           <tr>
+               <td>JSC</td>
+               <td>2014</td>
+               <td>Govt. Science College Attached High School</td>
+               <td>5.00</td>
+           </tr>
+           <tr>
+               <td>SSC</td>
+               <td>2017
+               </td>
+               <td>Govt. Science College Attached High School</td>
+               <td>5.00</td>
+           </tr>
+           <tr>
+               <td>HSC</td>
+               <td>2019</td>
+               <td>Notre Dame College</td>
+               <td>4.25</td>
+           </tr>
+           <tr>
+               <td>BSc CSE</td>
+               <td>2023 <br> <span style="font-size: 1vw">(expected)</span></td>
+               <td>United International University</td>
+               <td><i> N/A </i></td>
+           </tr>
+       </table>
+       </div>
+       <div id="social" class="social-main">
+           <p style="font-size: 3vw; font-weight: bold">Social Media & Others</p>
+           <div align="center">
+               <a href="https://www.facebook.com/ashababnoor" target="_blank"> <img src="images/facebook.png" title="Facebook"> </a>
+               <a href="https://www.github.com/ashababnoor" target="_blank"> <img src="images/github-logo.png" title="GitHub"> </a>
+               <a href="https://www.behance.net/ashababnoor" target="_blank"> <img src="images/behance.png" title="Behance"> </a>
+               <br><br><br>
+               <a href="https://www.twitter.com/ashababnoor" target="_blank"> <img src="images/twitter.png" title="Twitter"> </a>
+               <a href="https://www.instagram.com/ashababnoor" target="_blank"> <img src="images/instagram.png" title="Instagram"> </a>
+               <a href="https://www.linkedin.com/ashababnoor" target="_blank" title="LinkedIn"> <img src="images/linkedin.png"> </a>
+           </div>
+       </div>
+       <div id="hobby" class="hobby">
+           <p style="font-size: 3vw; font-weight: bold; text-align: left">Hobbies</p>
+           <br><br><br>
+           <div class="hobby-items" style="background-color: #34a853"> 
+               Cooking
+           </div>
+           <div class="hobby-items" style="background-color: #4285f4"> 
                 Coding
             </div>
             <div class="hobby-items" style="background-color: orange; word-spacing: normal"> 
